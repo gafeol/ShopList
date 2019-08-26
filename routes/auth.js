@@ -19,4 +19,4 @@ router.get('/google/redirect', passport.authenticate('google'), (req, res) => {
     res.send("FOI")
 })
 
-module.exports = router
+module.exports = router;

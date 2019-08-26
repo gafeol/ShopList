@@ -8,4 +8,11 @@ const userSchema = new Schema({
 
 const User = mongoose.model('user', userSchema)
 
-module.exports = User
+new User({
+    username: "ab",
+    googleId: '1231'
+}).save().then((newUser)=>{
+    console.log('novo usuario', newUser)
+})
+
+module.exports = User;
